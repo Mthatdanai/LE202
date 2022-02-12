@@ -1,55 +1,55 @@
 # การทดลองที่ 1 เรื่อง การเขียนโปรแกรมเพื่อรันบนไมโครคอนโทรเลอร์
 
-    #include <Arduino.h>        *ดึงข้อมูลมาจาก Arduino.h
+    #include <Arduino.h>        							.ดึงข้อมูลมาจาก Arduino.h
     
-    int cnt = 0;                *จำนวนเต็มเริ่มนับจาก 0
+    int cnt = 0;               							        .จำนวนเต็มเริ่มนับจาก 0
     
-    void setup()                  *ส่วนset up โปรแกรม
+    void setup()              						                .ส่วน set up เริ่มต้นของโปรแกรม 
     {
-     	Serial.begin(115200); 
+     	Serial.begin(115200);                                                           .ตั้งค่าความเร็วในการสื่อสารเป็นบิตต่อวินาที
     }
 
-    void loop()
+    void loop()                                                                         .บอกโปรแกรมวนรูปโค้ดข้างล่าง
     {
-	    cnt++;
-	    Serial.printf("PATTANI :%d\n",cnt);
-	    int s = cnt % 5 + 1;
-	    int d = s * 1000;
-	    delay(d);
+	    cnt++;									.นับเพิ่มทีละ 1
+	    Serial.printf("PATTANI :%d\n",cnt);						.แสดงผลข้อมูล  นับจำนวน
+	    int s = cnt % 5 + 1;							.ให้ s เก็บค่าจำนวนเต็มจากผลคำนวณ
+	    int d = s * 1000;								.ให็ d เก็บค่าจำนวนเต็มดีเลย์จากการคำนวณ
+	    delay(d);								        .แสดงค่าดีเลย์
     }	
 
 # การทดลองที่ 2 เรื่อง การเขียนโปรแกรมค้นหาไวไฟ
 
-		#include <Arduino.h>
-		#include <ESP8266WiFi.h>
+		#include <Arduino.h> 							.ดึงข้อมูลมาจาก Arduino.h
+		#include <ESP8266WiFi.h>						.ดึงข้อมูลมาจาก ESP8266WiFi.h
 
-		int cnt = 0;
+		int cnt = 0;								.จำนวนเต็มเริ่มนับจาก 0
 
-		void setup()
+		void setup()								.ส่วนset up เริ่มต้นของโปรแกรม
 		{
-			Serial.begin(115200);
-			WiFi.mode(WIFI_STA);
-			WiFi.disconnect();
-			delay(100);
-			Serial.println("\n\n\n");
+			Serial.begin(115200);						.ตั้งค่าความเร็วในการสื่อสารเป็นบิตต่อวินาที
+			WiFi.mode(WIFI_STA);						.ตั้งค่า wifi เป็นโหมดสถานี
+			WiFi.disconnect();						.ตัดการเชื่อมต่อ wifi ก่อนหน้า
+			delay(100);							.ค่าดีเลย์
+			Serial.println("\n\n\n");					
 		}
 
-		void loop()
+		void loop()								.บอกโปรแกรมวนรูปโค้ดข้างล่าง
 		{
-			Serial.println("========== เริ่มต้นแสกนหา Wifi ===========");
-			int n = WiFi.scanNetworks();
-			if(n == 0) {
-				Serial.println("NO NETWORK FOUND");
-			} else {
+			Serial.println("========== เริ่มต้นแสกนหา Wifi ===========");      .แสดงผลข้อมูล
+			int n = WiFi.scanNetworks();					.แสกนหา wifi
+			if(n == 0) {							.หากหาไม่พบ
+				Serial.println("NO NETWORK FOUND");			.แสดงผลว่าไม่พบสัญญาณ wifi
+			} else {							.ถ้าเป็นกรณีพบสัญญาณ
 				for(int i=0; i<n; i++) {
-					Serial.print(i + 1);
+					Serial.print(i + 1); 				
 					Serial.print(": ");
-					Serial.print(WiFi.SSID(i));
+					Serial.print(WiFi.SSID(i));			.แสดงชื่อสัญญาณ
 					Serial.print(" (");
-					Serial.print(WiFi.RSSI(i));
+					Serial.print(WiFi.RSSI(i));			.แสดงความเร็วของสัญญาณ
 					Serial.println(")");
-					Serial.print(WiFi.channel(i));
-					delay(10);
+					Serial.print(WiFi.channel(i));			.แสดง channel ของสัญญาณ
+					delay(10);					
 				}
 			}
 			Serial.println("\n\n");
@@ -58,39 +58,39 @@
 
 # การทดลองที่ 3 เรื่อง การเขียนโปรแกรมเอ้าพุทสัญญาณดิจิทัล
 
-		#include <Arduino.h>
-		#include <ESP8266WiFi.h>
+		#include <Arduino.h>							.ดึงข้อมูลมาจาก Arduino.h
+		#include <ESP8266WiFi.h>						.ดึงข้อมูลมาจาก ESP8266WiFi.h
 
-		int cnt = 0;
+		int cnt = 0;								.จำนวนเต็มเริ่มนับจาก 0
 
-		void setup()
+		void setup()								.ส่วน set up เริ่มต้นของโปรแกรม
 		{
-			Serial.begin(115200);
-			pinMode(0, OUTPUT);
+			Serial.begin(115200);						.ตั้งค่าความเร็วในการสื่อสารเป็นบิตต่อวินาที
+			pinMode(0, OUTPUT);						.กำหนดการทำงานของ pin
 			Serial.println("\n\n\n");
 		}
 
-		void loop()
+		void loop()								.บอกโปรแกรมวนรูปโค้ดข้างล่าง
 		{
-			cnt++;
-			if(cnt % 2) {
-				Serial.println("========== ON ===========");
-				digitalWrite(0, HIGH);
+			cnt++;								.นับเพิ่มทีละ 1
+			if(cnt % 2) {							.ถ้าค่าที่นับได้หารสองเหลือเศษ 0
+				Serial.println("========== ON ===========");		.แสดงผลว่า on
+				digitalWrite(0, HIGH);    				.ใช้สำหรับสั่งให้ Arduino เขียนค่า HIGH ที่ขา digital ของบอร์ด
 			} else {
-				Serial.println("========== OFF ===========");
-				digitalWrite(0, LOW);
+				Serial.println("========== OFF ===========");		.ถ้าค่าที่นับได้หารสองเหลือเศษ 1
+				digitalWrite(0, LOW);					.ใช้สำหรับสั่งให้ Arduino เขียนค่า HIGH ที่ขา digital ของบอร์ด
 			}
-			delay(500);
+			delay(500);							.แสดงผลดีเลย์
 		}
 
 # การทดลองที่ 4 เรื่อง การเขียนโปรแกรมอินพุทสัญญาณดิจิทัล
 
-		#include <Arduino.h>
-		#include <ESP8266WiFi.h>
+		#include <Arduino.h>							.ดึงข้อมูลมาจาก Arduino.h
+		#include <ESP8266WiFi.h>						.ดึงข้อมูลมาจาก ESP8266WiFi.h
 
-		int cnt = 0;
+		int cnt = 0;								.จำนวนเต็มเริ่มนับจาก 0
 
-		void setup()
+		void setup()								.ส่วน set up เริ่มต้นของโปรแกรม
 		{
 			Serial.begin(115200);
 			pinMode(0, INPUT);
