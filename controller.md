@@ -64,4 +64,18 @@
     
     หน่วยความจำ: RAM: 50 KB
     
-    พอร์ท: Wi-Fi
+    พอร์ท: ไม่มีพอร์ต เชื่อมต่อผ่าน Wi-Fi
+ 
+# Sipeed Longan Nano RISC-V GD32VF103CBT6 MCU Development Board
+
+![image](https://user-images.githubusercontent.com/98943546/153703295-b12c84e5-90f2-4e61-b4bf-1cbfdce1c5a0.png)
+
+    ราคา: THB ฿203.00
+    
+    ลิงค์: https://www.lazada.co.th/products/for-sipeed-longan-nano-risc-v-gd32vf103cbt6-mcu-development-board-i2596025060-s9245978057.html?exlaz=d_1:mm_150050845_51350205_2010350205::12:12654756915!117524295342!!!pla-294682000766!c!294682000766!9245978057!168855522&gclid=Cj0KCQiA0p2QBhDvARIsAACSOONJJ3GBDvWpqg6qbz_I6gUjadgPETkaVc4KURXcUMVn_T8Rc0W6OOUaAg9DEALw_wcB
+    
+    ความเร็ว: 32.768KHz RTC low-speed crystal oscillator
+    
+    หน่วยความจำ: 32.768KHz RTC low-speed crystal oscillator
+    
+    พอร์ท:  mini TF card slot, and use Type-C USB interface.
