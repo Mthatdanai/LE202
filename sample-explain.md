@@ -135,10 +135,10 @@
 			Serial.print("\n\nIP address: ");
 			Serial.println(WiFi.localIP());
 
-			server.onNotFound([]() {
-				server.send(404, "text/plain", "Path Not Found");
+			server.onNotFound([]() {					.แสดงผลเมื่อไม่พบเซิร์ฟเวอร์
+				server.send(404, "text/plain", "Path Not Found");	.เซิร์ฟเวอร์ส่งข้อความกลับว่าไม่พบ
 			});
-
+											.ส่วนข้างล่างนี้เป็นการแสดงผลเซิร์ฟเวอร์ที่ใช้งานได้ทั้งหมด
 			/// http://192.0.0.1/ = Hello cnt: ???
 			server.on("/", []() {
 				cnt++;
