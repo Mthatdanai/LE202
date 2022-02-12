@@ -161,7 +161,7 @@
 				server.send(200, "text/plain", msg);
 			});
 
-			server.begin();
+			server.begin();							.เริ่มต้นใช้งานเซิร์ฟเวอร์
 			Serial.println("HTTP server started");
 		}
 
