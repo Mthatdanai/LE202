@@ -1,12 +1,12 @@
 # การทดลองที่ 1 เรื่อง การเขียนโปรแกรมเพื่อรันบนไมโครคอนโทรเลอร์
 
-    #include <Arduino.h>
+    #include <Arduino.h>        *ดึงข้อมูลมาจาก Arduino.h
     
-    int cnt = 0;
+    int cnt = 0;                *จำนวนเต็มเริ่มนับจาก 0
     
-    void setup()
+    void setup()                  *ส่วนset up โปรแกรม
     {
-     	Serial.begin(115200);
+     	Serial.begin(115200); 
     }
 
     void loop()
