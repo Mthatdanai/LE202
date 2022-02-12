@@ -68,7 +68,7 @@
  
 # Sipeed Longan Nano RISC-V GD32VF103CBT6 MCU Development Board
 
-![image](https://user-images.githubusercontent.com/98943546/153703295-b12c84e5-90f2-4e61-b4bf-1cbfdce1c5a0.png)
+(Image: for Sipeed Longan Nano RISC-V GD32VF103CBT6 MCU Development Board)![image](https://user-images.githubusercontent.com/98943546/153703487-ed6c75a7-8ac8-4cf8-a032-a014c016e359.png)
 
     ราคา: THB ฿203.00
     
