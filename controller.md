@@ -27,10 +27,41 @@
     ความเร็ว: 16 MHz
     
     หน่วยความจำ: Flash Memory: 256 KB of which 8 KB used by bootloader
+    
                         SRAM: 8 KB
+                        
                       EEPROM: 4 KB
     
     พอร์ท: 54 digital input/output pins (of which 14 can be used as PWM outputs), 16 analog inputs, 4 UARTs (hardware serial ports), a 16 MHz crystal oscillator, a USB connection, a power jack, an ICSP header, and a reset button
     
-    # Teensy 3.2 USB Microcontroller Development Board
+# Teensy 3.2 USB Microcontroller Development Board
+
+![image](https://user-images.githubusercontent.com/98943546/153702696-a53afd5a-1989-420a-bbac-7e83cca45329.png)
+
+    ราคา: USD $19.80
     
+    ลิงค์: https://www.robotshop.com/en/teensy-32-usb-microcontroller-development-board.html
+    
+    ความเร็ว: 72MHz
+    
+    หน่วยความจำ: Cache: 256Bytes
+    
+                  RAM: 64kbytes
+                  
+               EEPROM: 2kbytes
+    
+    พอร์ท: USB port only
+    
+# MakePython ESP8266 WiFi Microcontroller
+
+![image](https://user-images.githubusercontent.com/98943546/153702979-b5b94c19-4348-4a53-a6d1-a530f22d5d3b.png)
+
+    ราคา: USD $9.99
+    
+    ลิงค์: https://www.robotshop.com/en/makepython-esp8266-wifi-microcontroller.html
+    
+    ความเร็ว: 2.4 ~ 2.5 GHz
+    
+    หน่วยความจำ: RAM: 50 KB
+    
+    พอร์ท: Wi-Fi
