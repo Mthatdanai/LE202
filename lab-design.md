@@ -48,7 +48,11 @@
 
 2.microcontroller
 
-3.มอเตอร์ 3-4 ตัว
+![image](https://user-images.githubusercontent.com/98943546/153741263-be5c7d38-51b7-4eab-8712-2c5e8079963d.png)
+
+3.มอเตอร์กำลังสูง 3-4 ตัว
+
+![image](https://user-images.githubusercontent.com/98943546/153741331-3a015f87-8226-4e60-8dae-67dec11ca777.png)
 
 4.สายไฟ
 
