@@ -41,11 +41,11 @@ Assembly: x86-64 gcc 11.2
 
 ### ตัวอย่างที่ 2 RISC-V
 
-processor: RISC-V rv64gc
+processor: RISC-V
 
 assembly: RISC-V rv64gc gcc 10.2.0
 
-[ด้านซ้าย คือ ภาษา C++ (high level language)]
+[ด้านซ้าย คือ ภาษา C (high level language)]
 
 [ด้านขวา คือ ภาษา Assembly (มีแถบสี) และภาษาเครื่อง (อักษรสีเทาข้างล่างภาษา Assembly)]
 
